@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="ED1BAB18-0324-42c2-934C-F8C96EE6EB52" name="B" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-E8-4E-58" com_port="2001" bootmode="0" cx="507.000000" cy="248.000000" edit_left="534" edit_top="302">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="0499B4C3-CE96-46e5-BC9B-DC188DFAE6C0" name="A" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-87-4D-62" com_port="2000" bootmode="0" cx="318.000000" cy="389.000000" edit_left="345" edit_top="443">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="72D7FF5A-FADD-45fb-8BBA-43CC69380B38" name="C" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-E0-1A-08" com_port="2002" bootmode="0" cx="685.000000" cy="390.000000" edit_left="712" edit_top="444">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="0499B4C3-CE96-46e5-BC9B-DC188DFAE6C0" destDeviceID="ED1BAB18-0324-42c2-934C-F8C96EE6EB52">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="379.612823" srcBoundRect_Y="390.177734" srcOffset_X="-43.000000" srcOffset_Y="-26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="499.387177" tarBoundRect_Y="300.822266" tarOffset_X="-59.000000" tarOffset_Y="-20.000000" />
+        </line>
+        <line srcDeviceID="ED1BAB18-0324-42c2-934C-F8C96EE6EB52" destDeviceID="72D7FF5A-FADD-45fb-8BBA-43CC69380B38">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="567.757813" srcBoundRect_Y="301.930389" srcOffset_X="10.000000" srcOffset_Y="-11.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="678.242188" tarBoundRect_Y="390.069611" tarOffset_X="3.000000" tarOffset_Y="-13.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
