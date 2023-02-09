@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="45463E98-F6CD-42db-B892-D06CEC04350E" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-54-15-80" com_port="2002" bootmode="0" cx="422.000000" cy="252.000000" edit_left="449" edit_top="306">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="69D67C0E-B9A4-4128-BF0B-15DE0FCBB0B1" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-41-3A-7B" com_port="2000" bootmode="0" cx="176.000000" cy="252.000000" edit_left="203" edit_top="306">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="1FB1A873-CC7A-4376-88DA-0EC7F40DC01C" name="AR2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-A1-46-31" com_port="2001" bootmode="0" cx="662.000000" cy="251.000000" edit_left="689" edit_top="305">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="69D67C0E-B9A4-4128-BF0B-15DE0FCBB0B1" destDeviceID="45463E98-F6CD-42db-B892-D06CEC04350E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="246.183762" srcBoundRect_Y="279.000000" srcOffset_X="-4.000000" srcOffset_Y="-18.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="405.816223" tarBoundRect_Y="279.000000" tarOffset_X="-33.000000" tarOffset_Y="-17.000000" />
+        </line>
+        <line srcDeviceID="45463E98-F6CD-42db-B892-D06CEC04350E" destDeviceID="1FB1A873-CC7A-4376-88DA-0EC7F40DC01C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="492.183380" srcBoundRect_Y="278.820068" srcOffset_X="-7.000000" srcOffset_Y="-17.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="645.816589" tarBoundRect_Y="278.179932" tarOffset_X="-34.000000" tarOffset_Y="-19.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="232" top="236" right="311" bottom="253" content="1.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="583" top="234" right="662" bottom="251" content="1.1.1.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="279" top="69" right="494" bottom="164" content="bfd&#x0D;&#x0A;q&#x0D;&#x0A;bfd bb bind peer-ip 1.1.1.1&#x0D;&#x0A;discriminator local 20&#x0D;&#x0A;discriminator remote 10&#x0D;&#x0A;commit " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="235" top="367" right="692" bottom="384" content="ip route-static 0.0.0.0 0.0.0.0 1.1.1.2 track bfd-session aa" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
