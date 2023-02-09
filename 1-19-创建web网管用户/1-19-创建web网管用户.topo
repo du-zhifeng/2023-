@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="B8376053-833C-4059-B9CF-6C1F6C5D866D" name="Cloud1" poe="0" model="Cloud" settings="" system_mac="" com_port="0" bootmode="0" cx="534.500000" cy="217.500000" edit_left="577" edit_top="302">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="0" />
+                <interface sztype="Serial" interfacename="Serial" count="0" />
+                <interfaceMap sztype="Ethernet" interfacename="Ethernet" displayNo="1" remoteDisplayNo="2" adapterUid="\Device\NPF_{928609C9-A5AF-4119-BB92-46C90F440120}" isOpen="1" udpPort="0" peerIPAdd="0.0.0.0" peerIP="0" peerPort="0" />
+                <interfaceMap sztype="Ethernet" interfacename="Ethernet" displayNo="2" remoteDisplayNo="1" adapterUid="" isOpen="0" udpPort="0" peerIPAdd="0.0.0.0" peerIP="0" peerPort="0" />
+            </slot>
+        </dev>
+        <dev id="0648ECF3-BA38-43cd-85B4-92939EF1DCC6" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-8A-76-B0" com_port="2000" bootmode="0" cx="267.000000" cy="233.000000" edit_left="294" edit_top="287">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="0648ECF3-BA38-43cd-85B4-92939EF1DCC6" destDeviceID="B8376053-833C-4059-B9CF-6C1F6C5D866D">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="337.183777" srcBoundRect_Y="260.000000" srcOffset_X="-5.000000" srcOffset_Y="-21.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="512.603027" tarBoundRect_Y="260.000000" tarOffset_X="-51.000000" tarOffset_Y="-19.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

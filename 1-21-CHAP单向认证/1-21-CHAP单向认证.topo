@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="B62A9512-7023-41e7-8461-DCA093BE5B02" name="AR2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-8D-64-94" com_port="2001" bootmode="0" cx="602.000000" cy="255.000000" edit_left="629" edit_top="309">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="521" />
+        </dev>
+        <dev id="083DA89D-3EB4-4a81-915D-D4209341B797" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-C6-18-5E" com_port="2000" bootmode="0" cx="262.000000" cy="255.000000" edit_left="289" edit_top="309">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="083DA89D-3EB4-4a81-915D-D4209341B797" destDeviceID="B62A9512-7023-41e7-8461-DCA093BE5B02">
+            <interfacePair lineName="Serial" srcIndex="10" srcBoundRectIsMoved="0" srcBoundRect_X="332.183777" srcBoundRect_Y="282.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="10" tarBoundRectIsMoved="0" tarBoundRect_X="585.816223" tarBoundRect_Y="282.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

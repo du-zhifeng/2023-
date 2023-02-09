@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="B1258FAC-878E-4922-A504-522061A34E49" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-BD-12-17" com_port="2000" bootmode="0" cx="232.000000" cy="253.000000" edit_left="259" edit_top="307">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="E1" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="516" />
+        </dev>
+        <dev id="6C4C0146-96B4-439d-9A28-574A7936009A" name="AR2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-83-29-4A" com_port="2001" bootmode="0" cx="583.000000" cy="253.000000" edit_left="610" edit_top="307">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="E1" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="516" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="B1258FAC-878E-4922-A504-522061A34E49" destDeviceID="6C4C0146-96B4-439d-9A28-574A7936009A">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="302.183777" srcBoundRect_Y="280.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="566.816223" tarBoundRect_Y="280.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

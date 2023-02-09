@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="F120CDD1-52BE-4413-8662-D3292CF9AAFE" name="www.Server" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-05-3A-1B -ipaddr 10.0.0.1 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-05-3A-1B" com_port="0" bootmode="0" cx="119.000000" cy="112.000000" edit_left="146" edit_top="164">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="6CF25D1C-4CEE-4878-8B92-7755462B83F3" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-F1-71-7E  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-F1-71-7E" com_port="0" bootmode="0" cx="771.000000" cy="233.000000" edit_left="798" edit_top="287">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="E39CC25E-DBC3-4f31-856B-043D056702C5" name="Internet" poe="0" model="AR3260" settings="" system_mac="00-E0-FC-F8-7B-E5" com_port="2001" bootmode="0" cx="540.000000" cy="233.000000" edit_left="567" edit_top="287">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="FA63D1A0-B003-476a-A32E-163C714999DA" name="FTP Server" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-55-54-72 -ipaddr 10.0.0.3 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-55-54-72" com_port="0" bootmode="0" cx="310.000000" cy="405.000000" edit_left="337" edit_top="459">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="6610579C-0789-46d2-8750-E2ADAA5618BA" name="ISP" poe="0" model="AR3260" settings="" system_mac="00-E0-FC-8E-7B-12" com_port="2000" bootmode="0" cx="310.000000" cy="232.000000" edit_left="304" edit_top="278">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="6610579C-0789-46d2-8750-E2ADAA5618BA" destDeviceID="E39CC25E-DBC3-4f31-856B-043D056702C5">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="380.183350" srcBoundRect_Y="259.187744" srcOffset_X="-8.000000" srcOffset_Y="-18.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="523.816650" tarBoundRect_Y="259.812256" tarOffset_X="-34.000000" tarOffset_Y="-17.000000" />
+        </line>
+        <line srcDeviceID="6610579C-0789-46d2-8750-E2ADAA5618BA" destDeviceID="FA63D1A0-B003-476a-A32E-163C714999DA">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="337.000000" srcBoundRect_Y="302.183777" srcOffset_X="9.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="337.000000" tarBoundRect_Y="388.816223" tarOffset_X="8.000000" tarOffset_Y="2.000000" />
+        </line>
+        <line srcDeviceID="6610579C-0789-46d2-8750-E2ADAA5618BA" destDeviceID="F120CDD1-52BE-4413-8662-D3292CF9AAFE">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="300.434113" srcBoundRect_Y="236.026672" srcOffset_X="-9.000000" srcOffset_Y="-23.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="182.565887" tarBoundRect_Y="161.973328" tarOffset_X="3.000000" tarOffset_Y="-16.000000" />
+        </line>
+        <line srcDeviceID="E39CC25E-DBC3-4f31-856B-043D056702C5" destDeviceID="6CF25D1C-4CEE-4878-8B92-7755462B83F3">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="610.183777" srcBoundRect_Y="260.000000" srcOffset_X="-12.000000" srcOffset_Y="-26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="754.816223" tarBoundRect_Y="260.000000" tarOffset_X="-64.000000" tarOffset_Y="-23.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="69" top="87" right="224" bottom="104" content="192.168.20.2/24:8080" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="221" top="330" right="308" bottom="362" content="VLAN 200&#x0D;&#x0A;10.0.0.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="293" top="488" right="380" bottom="505" content="10.0.0.3/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="101" top="202" right="218" bottom="234" content="VLAN 100&#x0D;&#x0A;192.168.20.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
